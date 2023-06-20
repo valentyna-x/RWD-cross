@@ -30,7 +30,7 @@ body {
 .banner,
 .blog,
 .footer {
-  padding: 0 calc(50vw - 585px);
+  padding: 0 calc(50vw - 768px);
 }
 @media screen and (max-width: 1200px) {
   .header,
@@ -78,6 +78,10 @@ body {
   }
 }
 
+.menu__item {
+  position: relative;
+}
+
 .menu {
   list-style: none;
   display: flex;
@@ -111,11 +115,11 @@ body {
 .menu__item::after {
   content: "";
   position: absolute;
-  width: 70%;
+  width: 40%;
   height: 1px;
-  background-color: #000;
-  left: 50%;
-  bottom: -3px;
+  background-color: #56585a;
+  left: 40%;
+  bottom: -4px;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   visibility: hidden;
@@ -207,6 +211,7 @@ body {
   display: flex;
   gap: 30px;
   padding-top: 50px;
+  align-items: center;
 }
 
 h1 {
